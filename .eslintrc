@@ -1,0 +1,22 @@
+// До подключаем правила - npm i -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",// Установленный parcer
+    "plugins": ["@typescript-eslint"], // Установленный плагин
+    "rules": { // Сами правила
+        "semi": "off", // Выключаем стандартные правила ; в конце
+        "@typescript-eslint/semi": ["warn"], // Если нету ; то кидаем предупреждение
+        "@typescript-eslint/no-empty-interface": [
+            "error", // Если задаём пустой интерфейс, то выкидываем ошибку
+            {
+                "allowSingleExtends": true // Кроме расширения интерфейса
+            }
+        ]
+    },
+    "extends": [
+        "eslint:recommended", // Рекомендованные правила estlint
+        "plugin:@typescript-eslint/eslint-recommended", // Рекомендованные правила ts
+        "plugin:@typescript-eslint/recommended"
+    ]
+}

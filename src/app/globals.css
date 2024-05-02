@@ -39,9 +39,9 @@ body {
     height: 100%;
 
     color: var(--black);
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
 
-    font-family: "Noto Sans", sans-serif;
+    font-family: 'Noto Sans', sans-serif;
 
     font-size: 100%;
     font-size: 14px;
@@ -69,8 +69,6 @@ button::-moz-focus-inner {
     border: 0;
 }
 
-
-
 a:hover {
     text-decoration: none;
 }
@@ -94,11 +92,14 @@ h6 {
 }
 
 :root {
-    --black:#3B434E;
-    --white:white;
-    --primary:#7653FC;
+    --black: #3b434e;
+    --white: white;
+    --primary: #7653fc;
+    --primary-hover: #4326b8;
     --red: #fc836d;
-    --green: #1DC37E;
-    --green-lite:#C8F8E4;
-    --font-family: "Noto Sans", sans-serif
+    --green: #1dc37e;
+    --green-lite: #c8f8e4;
+    --green-lite-hover: #5fd5a4;
+    --gray-lite: #ebebeb;
+    --font-family: 'Noto Sans', sans-serif;
 }

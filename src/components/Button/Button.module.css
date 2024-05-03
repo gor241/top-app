@@ -40,5 +40,10 @@
     transition: all 0.5s ease 0s;
 }
 
+.primary svg,
+.ghost:hover svg {
+    fill: var(--white);
+}
+
 .right {
 }

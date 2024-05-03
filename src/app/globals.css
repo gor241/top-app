@@ -97,9 +97,11 @@ h6 {
     --primary: #7653fc;
     --primary-hover: #4326b8;
     --red: #fc836d;
+    --dark-red: #de0000;
     --green: #1dc37e;
     --green-lite: #c8f8e4;
     --green-lite-hover: #5fd5a4;
     --gray-lite: #ebebeb;
+    --gray-large: #b3c0d9;
     --font-family: 'Noto Sans', sans-serif;
 }

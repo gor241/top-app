@@ -1,7 +1,7 @@
 import styles from './Button.module.css';
 import { ButtonProps } from './Button.props';
 import cn from 'classnames';
-
+import Arrow from './Vector.svg';
 
 export const Button = ({
     appearance,
@@ -24,7 +24,9 @@ export const Button = ({
                     [styles.right]: arrow == 'right',
                     [styles.down]: arrow == 'down',
                 })}
-            ><img src="/Vector.svg" alt="arrow" /></span>
+            >
+                <Arrow />
+            </span>
         </button>
     );
 };

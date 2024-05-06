@@ -2,9 +2,10 @@
 
 {
     "root": true,
-    "parser": "@typescript-eslint/parser",// Установленный parcer
+    "parser": "@typescript-eslint/parser", // Установленный parcer
     "plugins": ["@typescript-eslint"], // Установленный плагин
-    "rules": { // Сами правила
+    "rules": {
+        // Сами правила
         "semi": "off", // Выключаем стандартные правила ; в конце
         "@typescript-eslint/semi": ["warn"], // Если нету ; то кидаем предупреждение
         "@typescript-eslint/no-empty-interface": [
@@ -17,6 +18,7 @@
     "extends": [
         "eslint:recommended", // Рекомендованные правила estlint
         "plugin:@typescript-eslint/eslint-recommended", // Рекомендованные правила ts
-        "plugin:@typescript-eslint/recommended"
+        "plugin:@typescript-eslint/recommended",
+        "plugin:react-hooks/recommended"
     ]
 }

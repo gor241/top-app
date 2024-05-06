@@ -1,9 +1,13 @@
-import { Button, Htag, Paragraph, Tag } from '@/components';
+'use client';
+import { Button, Htag, Paragraph, Rating, Tag } from '@/components';
 import './globals.css';
+import { useState } from 'react';
 
 export default function Home() {
+    const [rating, setRating] = useState(3);
+
     return (
-        <div>
+        <>
             <Htag tag="h1">Text</Htag>
             <Button appearance="primary">Кнопка залитая</Button>
             <Button arrow="down" appearance="ghost">
@@ -20,6 +24,7 @@ export default function Home() {
             <Tag size="large" href="http://google.com">
                 Тег с ссылкой
             </Tag>
-        </div>
+            <Rating rating={rating} isEditable={true} setRating={setRating} />
+        </>
     );
 }
